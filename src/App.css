@@ -1,17 +1,440 @@
-.App {
-  text-align: center;
+/* Nav component */
+*{
+    margin: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+    
 }
 
-nav{
-  background-color: aqua;
-  padding: 1px;
-  box-shadow: 0 10px 10px black;
-}
-ul{
-  display: flex;
-  justify-content: end;
+body{
+    background-color: #F4E7D2;
+    background-image: url('./bilder/background.png');
+    background-repeat: no-repeat;
+    background-size: 105rem;
+
+    font-family: 'Spartan', Courier, monospace;
 }
 
-li{
-  margin: 0 20px;
+.wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
+  }
+
+/* html tag */
+
+p{
+    letter-spacing: 0.1em;
+    line-height: 1.3em;
 }
+
+h2{
+    color: #F57F12;
+    margin-bottom: 20px;
+}
+
+a{
+    /* color: #252525; */
+    color: #f4e7d2;
+    text-decoration: none;
+    font-size: 27px;
+    -webkit-text-stroke: 1px #252525;
+
+    font-weight: 900;
+    
+}
+
+::selection{
+    background-color: purple;
+    color: yellow;
+    -webkit-text-stroke: 1px #016A53;
+}
+/* / html tag*/
+
+/* Nav bar */
+.flex--nav-box{/* MoveBoksen til Nav_Sectionen*/
+    position: relative;
+    left: 110px;
+    
+    display: flex;
+    width: 800px; /* Litt støre en link boksen */
+    
+    position:fixed;
+    z-index: 1;
+}
+
+/* Animation bevgelse på nav logoen */
+.nav-splash-img{
+    position: relative;
+    animation: splash 2s ease 1s infinite alternate; 
+}
+
+@keyframes splash {
+    from { transform: scale(100%);}
+    to{ transform: scale(90%);}
+}
+/* / Animation bevgelse på nav logoen */
+
+.flex--nav-link{
+    position:absolute;
+    /* border: 2px solid blue; */
+    width: 800px; /* Bredden link boksen */
+    height: 100px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-icon-home{
+    color: #F57F12;
+}
+
+.nav-icon-home:hover,
+.nav-icon-about-me:hover,
+.nav-icon-skills:hover,
+.nav-icon-prosjekter:hover{
+    transform: scale(105%);
+    font-weight: 900;
+}
+/* / Nav bar */
+
+/* header componenet */
+header{
+    /* border: 2px solid red; */
+    height: 100vh;
+}
+.intro{
+    position: relative;
+    padding: 10px;
+    width: 600px;
+    height: 183px;
+    left: 110px;
+    top: 300px;
+}
+.intro > h2 {
+    color: #F4E7D2;
+
+}
+
+.intro--skill--img{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.intro--skill--img > img {
+    border-radius: 50%;
+}
+
+.col_orange{
+    color: #F57F12;
+}
+
+/* Main */
+/* section about-me */
+.main--flex{
+    display: flex;    
+    height: 100vh;
+    
+    background-image: url('./bilder/background_main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -280px;
+    background-position-y: -310px;
+}
+
+.main--section--left{
+    background-image: url('./bilder/atle.jpg');
+}
+
+/* section skill */
+.sectoin--main--skills{/* the background info */
+    position: relative;
+    height: 100vh;
+    display: flex;
+
+    background-image: url('./bilder/bg/skill-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.section--main--textbox{
+    position: relative;
+    top: 70px; 
+    height: 300px;
+}
+.main-skill-img-left{
+    width: 595px;
+}
+
+.main-skill-img-right{
+    background-image: url('./bilder/bg.png');
+}
+/* /section skill */
+
+/* section prosjekter */
+.flex{
+    display: flex;
+}
+/* background-image: url('./bilder/randomDot.png'); */
+.main-prosjekter-img{
+    background-image: url('./bilder/prosjekter/drumkit.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.img-prosjekter{
+    background: url('./bilder/mainLeftSplash.png');
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 620px;
+    left: -10px;
+    z-index: -1;
+}
+
+.random-dot-prosjekter{
+    z-index: -1;
+    position: relative;
+    top: 300px;
+
+}
+
+.sectoin--prosjekter{/* Router nav */
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-image: url('./bilder/bg/skill-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+   
+}
+
+.Nav-header{
+    position: absolute;
+    display: flex;
+    top: 25%;
+    left: 55%;
+    height: 50px;
+}
+
+/* Router Link Knappene */
+.Nav-header > a{ 
+    background-image: url('./bilder/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F57F12;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+.Nav-header > a:active{ 
+    box-shadow: 0 10px 30px white;
+    
+}
+.Nav-header > a:hover{
+    transform: scale(105%);
+}
+/* / Router Link Knappene */
+
+
+
+/* Prosjekt Bildene sin path */
+.main-prosjekter-img1{
+    background-image: url('./bilder/prosjekter/drumKit_Laptop.png');
+}
+.main-prosjekter-img2{
+    background-image: url('./bilder/prosjekter/counter_Laptop.png');
+}
+.main-prosjekter-img3{
+    background-image: url('./bilder/prosjekter/toDoList_Laptop.png');
+}
+
+.z-skill-dot{
+    position: absolute;
+    left: 54px;
+    top: 20px;
+    z-index: -1;
+}
+/* /Prosjekt Bildene sin path */
+
+/* Knappen som Linker til Prosjektene */
+.toogle-prosjekt-img{
+    position: relative;
+    top: 270px;
+    left: 410px;
+    width: 100px;
+    height: 64px;
+    border: 2px solid black;
+    background-color: #928A97;
+    border-radius: 55% 0 0 55%;
+}
+.linkSize{
+    position: relative;
+    top: 48.4%;
+    left: 411px;
+    padding: 22px 5px;
+    border-radius: 55% 0 0 55%;
+    z-index: 1;
+    
+    color:#F57F12;
+    text-shadow: 2px 1px #252525;
+    font-size: 22px;
+    font-weight: 600;
+}
+/* / Knappen som Linker til Prosjektene */
+/* /section prosjekter */
+/* /Main */
+
+/* sectoin footer */
+.section-footer{
+    position: relative;
+    top: 80px;
+    height: 70vh;
+    background-image: url('./bilder/footer.png');
+    background-repeat: no-repeat;
+}
+.section-footer-contact{
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 10px;
+    
+    position: relative;
+    width: 1258px;
+    height: 486px;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.section-footer-contact-left > h1 {
+    position: relative;
+    -webkit-text-stroke: 1px  #252525;
+    left: 38px;
+    margin-right: 64px;;
+    transform: translate(0, -50%);
+    width: 428px;
+    top: 50%;
+    height: 144px;
+}
+.section-footer-contact-right{
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+
+    width: 690px;
+    height: 422px;
+    
+    position: relative;
+    transform: translate(0, -50%);
+}
+
+.section-footer-contact-right > h2{
+    color: #252525;
+    -webkit-text-stroke: 1px #F57F12;
+}
+.section-footer-contact-right > h1{
+    font-size: 38px;
+}
+
+.input-field{
+width: 690px;
+height: 354px;
+
+}
+.input-field > input{
+    width: 675px;
+    height: 52px;
+    padding-left: 5px;
+   
+}
+.input-field > textarea{
+    width: 675px;
+    height: 125px;
+    padding-left: 5px;
+}
+
+.section-dark-footer{
+    background-color:  #000C24;
+    height: 85vh;
+  
+}
+.curlingGame{
+    position:relative;
+    left: 110px;
+    top: 20%;
+    border-radius: 20px;
+    width: 400px;
+    height: 492px;
+   
+}
+
+.curling-top-border{
+    position: relative;
+    background-color: #000C24;
+    top: -82%;
+    left: 110px;
+    width: 404px;
+    height: 46px;
+ 
+}
+
+.img-dark-footer{
+    position: relative;
+    top: -10px;
+    left: 70%;
+    width: 300px;
+    height: 210px;
+    background-image: url('./bilder/footerSplash.png');
+    background-repeat: no-repeat;
+   
+   
+
+}
+
+textarea {   /* for all text* area elements */
+    resize: none;
+  }
+
+  label,caption{
+    padding: 2px 5px;
+  }
+ 
+  .footer-text{
+    position: relative;
+    left: 130%;
+    top: 150px;
+
+    width: 308px;
+    height: 139px;
+   /*  border: 2px solid yellow; */
+    color:white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .footer-logo{
+      width: 198px;
+      height: 36px;
+      
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    
+    .footer-logo > img{
+        border-radius: 50%;
+    }
+
