@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/homework/static/css/main.9a79464b.css",
-    "main.js": "/homework/static/js/main.f0504eef.js",
+    "main.css": "/homework/static/css/main.5a60a0aa.css",
+    "main.js": "/homework/static/js/main.aed098a4.js",
     "static/js/787.f99c86d6.chunk.js": "/homework/static/js/787.f99c86d6.chunk.js",
+    "static/media/drumKit_Laptop.png": "/homework/static/media/drumKit_Laptop.18e4b9f6980753a410bb.png",
+    "static/media/toDoList_Laptop.png": "/homework/static/media/toDoList_Laptop.76b4edcbf1e3ec651c3f.png",
+    "static/media/counter_Laptop.png": "/homework/static/media/counter_Laptop.8f687c5f870f66cdf938.png",
+    "static/media/drumkit.png": "/homework/static/media/drumkit.ad2706259cfb4401559b.png",
+    "static/media/bg.png": "/homework/static/media/bg.b47870ee873e7f443543.png",
+    "static/media/footer.png": "/homework/static/media/footer.5a0871ae33d590337d7d.png",
+    "static/media/atle.jpg": "/homework/static/media/atle.c7e124b878cc5217d6f6.jpg",
+    "static/media/background_main.png": "/homework/static/media/background_main.c21bb81cc9eb7bdc1fb4.png",
+    "static/media/background.png": "/homework/static/media/background.a595de457608adc73e5a.png",
+    "static/media/skill-bg-img.png": "/homework/static/media/skill-bg-img.e847ec9bf8bed5608258.png",
+    "static/media/skills.png": "/homework/static/media/skills.32e825cf964da3b82717.png",
+    "static/media/footerSplash.png": "/homework/static/media/footerSplash.49691b947eb7a8800225.png",
+    "static/media/mainLeftSplash.png": "/homework/static/media/mainLeftSplash.c05ff2270a041df0849e.png",
+    "static/media/z-index_dotts.png": "/homework/static/media/z-index_dotts.ab97c574d9a865f9e304.png",
     "index.html": "/homework/index.html",
-    "main.9a79464b.css.map": "/homework/static/css/main.9a79464b.css.map",
-    "main.f0504eef.js.map": "/homework/static/js/main.f0504eef.js.map",
+    "main.5a60a0aa.css.map": "/homework/static/css/main.5a60a0aa.css.map",
+    "main.aed098a4.js.map": "/homework/static/js/main.aed098a4.js.map",
     "787.f99c86d6.chunk.js.map": "/homework/static/js/787.f99c86d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a79464b.css",
-    "static/js/main.f0504eef.js"
+    "static/css/main.5a60a0aa.css",
+    "static/js/main.aed098a4.js"
   ]
 }
