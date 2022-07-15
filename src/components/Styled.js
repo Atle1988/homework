@@ -18,9 +18,9 @@ font-size: 16px;
 `
 
 export const StyledDiv = styled.div`
-    margin-top: 100px;
+    
     max-width: 600px;
-    min-width: 530px;
+    min-width: 600px;
     height: 620px;
     border-radius: 20px;
     padding: 15px;
@@ -34,7 +34,7 @@ export const StyledDiv = styled.div`
 `
 
 export const StyledImage = styled.div`
-    margin-top: 100px;
+   
     margin-left: 110px;
     min-width: 480px;
     height: 653px;

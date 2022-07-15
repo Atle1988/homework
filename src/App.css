@@ -1,3 +1,8 @@
+/* Til neste gang. fiks navbar . må stoppe etter klikk ca 80px fra sectionenen 
+Legge til flere background bilder 
+Fikse bugg med width  på footer / dark section .. 
+Få send knappen til å virke i contact me sectionen */
+
 /* Nav component */
 *{
     margin: 0;
@@ -10,16 +15,16 @@ html{
 
 body{
     background-color: #F4E7D2;
-    background-image: url('./bilder/background.png');
+    background-image: url('./bilder/bg/bg-top-1.png');
     background-repeat: no-repeat;
-    background-size: 105rem;
+    background-size: 100rem;
 
     font-family: 'Spartan', Courier, monospace;
 }
 
 .wrapper{
-    margin-left:auto;
-    margin-right:auto;
+    /* margin-left:auto; */
+   /*  margin-right:auto; */
     width:960px;
   }
 
@@ -95,24 +100,23 @@ a{
 .nav-icon-home:hover,
 .nav-icon-about-me:hover,
 .nav-icon-skills:hover,
-.nav-icon-prosjekter:hover{
+.nav-icon-prosjekter:hover,
+.nav-icon-contact-me:hover{
     transform: scale(105%);
     font-weight: 900;
 }
 /* / Nav bar */
 
-/* header componenet */
-header{
-    /* border: 2px solid red; */
-    height: 100vh;
-}
+
 .intro{
     position: relative;
     padding: 10px;
-    width: 600px;
+    width: 480px;
     height: 183px;
     left: 110px;
-    top: 300px;
+    top: 320px;
+    background-color: #252525;
+   
 }
 .intro > h2 {
     color: #F4E7D2;
@@ -134,16 +138,43 @@ header{
 }
 
 /* Main */
+main,
+footer{
+    position: relative;
+    top: 720px;
+}
 /* section about-me */
-.main--flex{
-    display: flex;    
-    height: 100vh;
+.main--bg{
+    width: 1025.54px;
+    height: 1017.2px;
+    background-image: url('./bilder/bg/bg-top-2.png');
+    background-repeat: no-repeat;
+   background-size: 80rem;
+    position: absolute;
+   /*  top: -575px;
+    left: -380px; */
+
+    top: -575px;
+    z-index: -1;
     
+}
+.main--bg-small{
+    width: 1025.54px;
+    height: 1017.2px;
     background-image: url('./bilder/background_main.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: -280px;
-    background-position-y: -310px;
+    position: absolute;
+    
+    left: -700px;
+    z-index: -1;
+}
+
+
+#aboutMe,
+#skill,
+#prosjekter{
+    margin-bottom: 136px;
+
 }
 
 .main--section--left{
@@ -153,21 +184,21 @@ header{
 /* section skill */
 .sectoin--main--skills{/* the background info */
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
 
-    background-image: url('./bilder/bg/skill-bg-img.png');
+  /*   background-image: url('./bilder/bg/skill-bg-img.png');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right; */
 }
 
-.section--main--textbox{
+/* .section--main--textbox{
     position: relative;
-    top: 70px; 
+    margin-top: 170px; 
     height: 300px;
-}
+} */
 .main-skill-img-left{
-    width: 595px;
+    max-width: 580px;
 }
 
 .main-skill-img-right{
@@ -180,10 +211,11 @@ header{
     display: flex;
 }
 /* background-image: url('./bilder/randomDot.png'); */
-.main-prosjekter-img{
-    background-image: url('./bilder/prosjekter/drumkit.png');
-    background-repeat: no-repeat;
-    background-position: right;
+
+.sectoin--prosjekter{/* Router nav */
+    position: relative;
+   
+    height: 100vh;  
 }
 .img-prosjekter{
     background: url('./bilder/mainLeftSplash.png');
@@ -200,25 +232,15 @@ header{
     z-index: -1;
     position: relative;
     top: 300px;
-
+    
 }
 
-.sectoin--prosjekter{/* Router nav */
-    position: relative;
-    height: 100vh;
-    display: flex;
-    background-image: url('./bilder/bg/skill-bg-img.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 45%;
-   
-}
 
 .Nav-header{
     position: absolute;
     display: flex;
-    top: 25%;
-    left: 55%;
+    top: 5rem;
+    left: 49rem;
     height: 50px;
 }
 
@@ -231,7 +253,7 @@ header{
     border-radius: 15px;
     padding: 10px;
     margin-right: 20px;
-    
+    z-index: 1;
 }
 .Nav-header > a:active{ 
     box-shadow: 0 10px 30px white;
@@ -292,10 +314,13 @@ header{
 /* /Main */
 
 /* sectoin footer */
+
+
 .section-footer{
     position: relative;
-    top: 80px;
-    height: 70vh;
+    top: 0px;
+    height: 550px;
+    width: 100vw;
     background-image: url('./bilder/footer.png');
     background-repeat: no-repeat;
 }
@@ -305,12 +330,14 @@ header{
     border-radius: 10px;
     
     position: relative;
-    width: 1258px;
+    max-width: 1258px;
     height: 486px;
 
-    top: 60%;
+    
     left: 50%;
-    transform: translate(-50%, -50%);
+    top: -100px;
+    transform: translate(-50%, 0);
+    
     
 }
 .section-footer-contact-left > h1 {
@@ -362,33 +389,39 @@ height: 354px;
 
 .section-dark-footer{
     background-color:  #000C24;
-    height: 85vh;
+    height: 700px;
+    width: 100vw;
+    position: relative;
+    top: 0px;
+    
+   
   
 }
 .curlingGame{
     position:relative;
     left: 110px;
-    top: 20%;
     border-radius: 20px;
     width: 400px;
     height: 492px;
-   
 }
 
-.curling-top-border{
+.curling-top-border{    
     position: relative;
     background-color: #000C24;
-    top: -82%;
+    top: 45px;
     left: 110px;
     width: 404px;
     height: 46px;
+   
+    z-index: 1;
+    
  
 }
 
 .img-dark-footer{
     position: relative;
-    top: -10px;
-    left: 70%;
+   top: -12.4rem;
+    left: 70rem;
     width: 300px;
     height: 210px;
     background-image: url('./bilder/footerSplash.png');
@@ -408,9 +441,9 @@ textarea {   /* for all text* area elements */
  
   .footer-text{
     position: relative;
-    left: 130%;
-    top: 150px;
-
+    left: 40rem;
+    top: -200px;
+   
     width: 308px;
     height: 139px;
    /*  border: 2px solid yellow; */
@@ -420,6 +453,7 @@ textarea {   /* for all text* area elements */
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
+  
   }
 
   .footer-logo{
