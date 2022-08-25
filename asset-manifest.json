@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/homework/static/css/main.d7be7281.css",
-    "main.js": "/homework/static/js/main.749d79ff.js",
+    "main.css": "/homework/static/css/main.fa88003f.css",
+    "main.js": "/homework/static/js/main.690df456.js",
     "static/js/787.f99c86d6.chunk.js": "/homework/static/js/787.f99c86d6.chunk.js",
     "static/media/drumKit_Laptop.png": "/homework/static/media/drumKit_Laptop.18e4b9f6980753a410bb.png",
     "static/media/toDoList_Laptop.png": "/homework/static/media/toDoList_Laptop.76b4edcbf1e3ec651c3f.png",
     "static/media/counter_Laptop.png": "/homework/static/media/counter_Laptop.8f687c5f870f66cdf938.png",
     "static/media/footer.png": "/homework/static/media/footer.5a0871ae33d590337d7d.png",
     "static/media/atle.jpg": "/homework/static/media/atle.c7e124b878cc5217d6f6.jpg",
-    "static/media/background_main.png": "/homework/static/media/background_main.c21bb81cc9eb7bdc1fb4.png",
     "static/media/background.png": "/homework/static/media/background.a595de457608adc73e5a.png",
     "static/media/bg-top-1.png": "/homework/static/media/bg-top-1.fcb9296b000d27455fd4.png",
     "static/media/curlingGame.png": "/homework/static/media/curlingGame.694ff973923a87d433d1.png",
@@ -18,12 +17,12 @@
     "static/media/mainLeftSplash.png": "/homework/static/media/mainLeftSplash.c05ff2270a041df0849e.png",
     "static/media/z-index_dotts.png": "/homework/static/media/z-index_dotts.ab97c574d9a865f9e304.png",
     "index.html": "/homework/index.html",
-    "main.d7be7281.css.map": "/homework/static/css/main.d7be7281.css.map",
-    "main.749d79ff.js.map": "/homework/static/js/main.749d79ff.js.map",
+    "main.fa88003f.css.map": "/homework/static/css/main.fa88003f.css.map",
+    "main.690df456.js.map": "/homework/static/js/main.690df456.js.map",
     "787.f99c86d6.chunk.js.map": "/homework/static/js/787.f99c86d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7be7281.css",
-    "static/js/main.749d79ff.js"
+    "static/css/main.fa88003f.css",
+    "static/js/main.690df456.js"
   ]
 }
