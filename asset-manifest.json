@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/homework/static/css/main.fa88003f.css",
-    "main.js": "/homework/static/js/main.690df456.js",
+    "main.css": "/homework/static/css/main.df93e015.css",
+    "main.js": "/homework/static/js/main.57656dd3.js",
     "static/js/787.f99c86d6.chunk.js": "/homework/static/js/787.f99c86d6.chunk.js",
     "static/media/drumKit_Laptop.png": "/homework/static/media/drumKit_Laptop.18e4b9f6980753a410bb.png",
     "static/media/toDoList_Laptop.png": "/homework/static/media/toDoList_Laptop.76b4edcbf1e3ec651c3f.png",
     "static/media/counter_Laptop.png": "/homework/static/media/counter_Laptop.8f687c5f870f66cdf938.png",
-    "static/media/footer.png": "/homework/static/media/footer.5a0871ae33d590337d7d.png",
     "static/media/atle.jpg": "/homework/static/media/atle.c7e124b878cc5217d6f6.jpg",
     "static/media/background.png": "/homework/static/media/background.a595de457608adc73e5a.png",
     "static/media/bg-top-1.png": "/homework/static/media/bg-top-1.fcb9296b000d27455fd4.png",
@@ -17,12 +16,12 @@
     "static/media/mainLeftSplash.png": "/homework/static/media/mainLeftSplash.c05ff2270a041df0849e.png",
     "static/media/z-index_dotts.png": "/homework/static/media/z-index_dotts.ab97c574d9a865f9e304.png",
     "index.html": "/homework/index.html",
-    "main.fa88003f.css.map": "/homework/static/css/main.fa88003f.css.map",
-    "main.690df456.js.map": "/homework/static/js/main.690df456.js.map",
+    "main.df93e015.css.map": "/homework/static/css/main.df93e015.css.map",
+    "main.57656dd3.js.map": "/homework/static/js/main.57656dd3.js.map",
     "787.f99c86d6.chunk.js.map": "/homework/static/js/787.f99c86d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa88003f.css",
-    "static/js/main.690df456.js"
+    "static/css/main.df93e015.css",
+    "static/js/main.57656dd3.js"
   ]
 }
